@@ -146,7 +146,14 @@ each(names, function(item, indice){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
-
+function getUserById(arr, id, cb) {
+  // looking for the specific id
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].id === '16t') {
+      cb(arr[i]);
+    }
+  }
+}
 
 
 

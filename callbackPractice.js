@@ -62,8 +62,8 @@ last(names, function(lastName){
 
 
   //Code Here for multiply
-function multiply(num1, num2, mul) {
-  mul(num1 * num2);
+function multiply(num1, num2, cb) {
+  cb(num1 * num2);
 }
 
 multiply(4, 3, function(answer){
@@ -106,8 +106,8 @@ contains(names, 'Colt', function(result){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 function uniq(arr, cb) {
-  nArr = arr.filter(function(elem, index, self) {
-    return index == self.indexOf(elem);
+  nArr = arr.filter(function(elem, index, arr) {
+    return index == arr.indexOf(elem);
   })
   cb(nArr);
 }

@@ -126,6 +126,11 @@ uniq(names, function(uniqArr){
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
+function each(arr, cb) {
+  arr.forEach(function (item, index) {
+    cb(item, index);
+  });
+}
 
 
 

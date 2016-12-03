@@ -42,7 +42,9 @@ first(names, function(firstName){
 
 
   //Code Here for last
-  
+  function last(arr, cb) {
+    return cb(arr[arr.length - 1]);
+  }
 
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);

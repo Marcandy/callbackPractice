@@ -112,7 +112,9 @@ contains(names, 'Colt', function(result){
     //Code Here for uniq
 function uniq(arr, cb) {
   for (var i = 0; i < arr.length; i++) {
+    //loop through i
     for(var j = i + 1; j < arr.length; j++) {
+      //loop through second further ahead
       if(arr[i] === arr[j]) {
         arr.splice(i, 1);
         i--;
@@ -137,10 +139,17 @@ uniq(names, function(uniqArr){
 
     //Code Here for each
   function each(arr, cb) {
-    arr.forEach(function(item, index) {
-        return cb(item, index)
-      })
-    }
+
+      for (var i = 0; i < arr.length; i++) {
+
+          cb(arr[i], i);
+        }
+      }
+
+    // arr.forEach(function(item, index) {
+    //     return cb(item, index)
+    //   })
+
 
   each(names, function(item, indice){
     console.log('The item in the ' + indice + ' position is ' + item)

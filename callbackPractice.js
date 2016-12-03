@@ -82,7 +82,14 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
-
+  function contains(arr, str, cb) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === str) {
+        return cb(true);
+      }
+    }
+    return cb(false);
+  }
 
 
 contains(names, 'Colt', function(result){

@@ -135,6 +135,7 @@ uniq(names, function(uniqArr){
 
     //Code Here for each
 
+
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
 });

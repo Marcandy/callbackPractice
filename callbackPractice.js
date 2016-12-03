@@ -62,6 +62,10 @@ last(names, function(lastName){
 
 
   //Code Here for multiply
+function multiply(num1, num2, cb) {
+  total = num1 * num2;
+  return cb(total);
+}
 
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -78,6 +82,8 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
+
+
 
 contains(names, 'Colt', function(result){
   if(result === true){
